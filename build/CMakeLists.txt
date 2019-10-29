@@ -25,7 +25,7 @@ set (GASPI_LIBRARIES "-lGPI2-dbg -lpthread -L${GASPI_DIR}/lib64")
 
 # FMM lib
 set (FMM_LB_INCLUDE_DIR "../../FMM-lib/src/LB")
-set (FMM_lib /path/to/lib/FMM-lib/lib/libfmm.so)
+set (FMM_lib /home/nath/Documents/Dassault-UVSQ/2_These/FMM_update/FMM-lib/lib/libfmm.so)
 
 # OpenGL
 set (OPENGL_LIBRAIRIES "-lGL -lGLU -lglut -lm")

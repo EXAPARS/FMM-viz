@@ -586,8 +586,7 @@ int main(int argc, char* argv[])
 	SUCCESS_OR_DIE(gaspi_proc_init(GASPI_BLOCK));
 	gaspi_barrier(GASPI_GROUP_ALL, GASPI_BLOCK);
 
-	string dir = "/home/nath/Documents/Dassault-UVSQ/2_These/FMM/FMM-input-DA/";
-
+	string dir = "/path/to/lib/";
 
 	/** input **/
 	/* Dronera ORIGINAL in spectre*/	
