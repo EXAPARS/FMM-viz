@@ -1,0 +1,9 @@
+#! /bin/bash
+
+# $1 : nb MPI procs
+# $2 : LB strategy
+
+EXE=bin/viz
+cd ..
+mpirun -np $1 xterm  -ls -xrm 'XTerm*selectToClipboard: true' -hold -geometry 65x40 -e  $EXE $2
+
