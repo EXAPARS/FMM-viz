@@ -25,10 +25,10 @@ set (GASPI_LIBRARIES "-lGPI2-dbg -lpthread -L${GASPI_DIR}/lib64")
 
 # FMM lib
 set (FMM_LB_INCLUDE_DIR "../../FMM-lib/src/LB")
+set (FMM_lib /path/to/lib/FMM-lib/lib/libfmm.so)
 
 # OpenGL
 set (OPENGL_LIBRAIRIES "-lGL -lGLU -lglut -lm")
-
 
 # config
 set (BIN_DIR "../bin")
@@ -42,7 +42,7 @@ set (CMAKE_CXX_FLAGS "-no-pie -std=c++11 -Wall -fopenmp")
 set (MPI_COMPILE_FLAGS "-no-pie -std=c++11 -Wall -fopenmp")
 
 # set executables
-add_executable (viz 	${VIZ_src_list} )
+add_executable (viz  ${VIZ_src_list})
 
 target_include_directories(viz PUBLIC 
 	"../src/"
@@ -50,9 +50,7 @@ target_include_directories(viz PUBLIC
 	"${GASPI_DIR}/include"
 )
 
-set (FMM_lib /home/nath/Documents/Dassault-UVSQ/2_These/FMM_update/FMM-lib/lib/libfmm.so)
 target_link_libraries(viz ${FMM_lib})
-
 
 # set bin repository
 set_target_properties(viz
